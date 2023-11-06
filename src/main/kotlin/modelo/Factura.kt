@@ -1,16 +1,15 @@
 package modelo
 
-import java.text.DecimalFormat
-
-data class factura(var ID:Int,
+/*
+data class dtFactura(var ID:Int,
                    var cifEmpresa:String,
                    var FechaFactura:String,
                    var ProductoVendido:String,
                    var PrecioProducto:Double,
                    var CantidadVendida:Int,
-                   var PrecioTotal:Double )
+                   var PrecioTotal:Double )*/
 
-class Factura() {
+class Factura {
 
     companion object {
         private var contId = 1

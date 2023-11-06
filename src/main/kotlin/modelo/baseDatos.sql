@@ -1,15 +1,15 @@
-DROP TABLE Facturas CASCADE CONSTRAINTS;
-DROP TABLE Empresas CASCADE CONSTRAINTS;
+DROP TABLE FACTURAS CASCADE CONSTRAINTS;
+DROP TABLE EMPRESAS CASCADE CONSTRAINTS;
 DROP SEQUENCE Facturas_ID_Seq;
 
 
-CREATE TABLE Empresas (
+CREATE TABLE EMPRESAS (
     cifEmpresa VARCHAR(255) PRIMARY KEY,
     nombreEmpresa VARCHAR(255),
     dueno VARCHAR(255)
 );
 
-CREATE TABLE Facturas (
+CREATE TABLE FACTURAS (
     ID INT PRIMARY KEY,
     cifEmpresa VARCHAR(255),
     FechaFactura DATE,
@@ -83,3 +83,5 @@ column dueno format a20
 
 -- Ejecuta la consulta
 select * from empresas;
+
+commit;

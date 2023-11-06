@@ -1,11 +1,12 @@
 package modelo
 
-data class empresa(
+/*
+data class dtEmpresa(
     var cifEmpresa: String,
     var dueno: String,
     var nombreEmpresa: String
 )
-
+*/
 class Empresa {
 
 
