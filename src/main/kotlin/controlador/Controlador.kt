@@ -8,6 +8,7 @@ class Controlador {
     private val vista = Vista()
     private var menuActual: Menu = Menu.MenuPrincipal
     // Inicialmente, estás en el menú principal
+
     enum class Menu {
         MenuPrincipal,
         ConsultarTabla,
@@ -15,6 +16,7 @@ class Controlador {
         ModificarTablas,
         EliminarTablas
     }
+
     fun llamadaDeMenu() {
 
         when (vista.inicializarMenu()) {

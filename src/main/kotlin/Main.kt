@@ -1,6 +1,6 @@
 import controlador.*
 
-fun main(){
+fun main() {
 
     val llamadaMenu = Controlador().llamadaDeMenu()
 

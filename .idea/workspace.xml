@@ -8,17 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfccf68a-5d8e-456c-a942-ebd83ae86dcb" name="Changes" comment="xD">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/oracle_database_jdbc_debug_ojdbc11_g.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/vista/Vista.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Factura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Factura.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controlador/Controlador.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Empresa.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Factura.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Factura.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controlador/Controlador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controlador/Controlador.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/vista/Menu.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/vista/Vista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/vista/Vista.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,23 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/juanj/IdeaProjects/accesoJDBC",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15625",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanj/IdeaProjects/accesoJDBC&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15625&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\juanj\IdeaProjects\Factura\src\main\kotlin\modelo" />
@@ -89,18 +78,18 @@
       <option name="project" value="LOCAL" />
       <updated>1699043276603</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="xD">
+      <created>1699296193750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699296193750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xD" />
     <option name="LAST_COMMIT_MESSAGE" value="xD" />
-  </component>
-  <component name="XDebuggerManager">
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="controlador.Controlador" memberName="menu" />
-      </pinned-members>
-    </pin-to-top-manager>
   </component>
 </project>
