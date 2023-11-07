@@ -1,6 +1,4 @@
-import Controlador.*
-import modelo.*
-
+import controlador.*
 
 fun main(){
 

@@ -12,5 +12,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
     <orderEntry type="library" name="ojdbc11" level="project" />
+    <orderEntry type="library" name="oracle.database.jdbc.debug.ojdbc11_g" level="project" />
   </component>
 </module>

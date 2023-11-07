@@ -1,5 +1,6 @@
 package modelo
 
+import vista.*
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
@@ -7,6 +8,7 @@ import java.sql.ResultSet
 val objetoFactura = Factura()
 val objetoEmpresa = Empresa()
 var connection:Connection = establecerConexion()
+val vista = Vista()
 fun establecerConexion(): Connection {
     val jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe"
     Class.forName("oracle.jdbc.driver.OracleDriver")
@@ -35,29 +37,11 @@ fun consultarCabezeraTabla(nombreTabla: String): List<String> {
 
 }
 
-fun imprimirDatosTabla(nombreTabla: String) {
-    val columnas = consultarCabezeraTabla(nombreTabla)
-
-    if (columnas.isEmpty()) {
-        println("No se encontraron columnas para la tabla '$nombreTabla'.")
-    } else {
-        println("Columnas de la tabla '$nombreTabla':")
-        println("""
-            ---------------
-        """.trimIndent())
-        for (columna in columnas) {
-            println(columna)
-        }
-        println()
-    }
-}
-
-
 fun obtenerCIFEmpresas(): List<String> {
     val connection = establecerConexion()
     val cifEmpresas = mutableListOf<String>()
 
-    val query = connection.prepareStatement("SELECT cifEmpresa FROM Empresas")
+    val query = connection.prepareStatement("SELECT cifEmpresa FROM EMPRESAS")
     val result: ResultSet = query.executeQuery()
 
     while (result.next()) {
@@ -89,41 +73,20 @@ fun hacerConsulta(nombreTabla: String): List<Map<String, Any>> {
     return datos
 }
 
-fun imprimirDatosConsulta(nombreTabla: String) {
-    val datos = hacerConsulta(nombreTabla)
-
-    if (datos.isEmpty()) {
-        println("No se encontraron datos para la tabla '$nombreTabla'.")
-    } else {
-        println("Datos de la tabla '$nombreTabla':")
-        println("""
-            ---------------
-        """.trimIndent())
-        println()
-        for (fila in datos) {
-            for ((columna, valor) in fila) {
-                println("$columna: $valor")
-            }
-            println()
-        }
-    }
-}
-
-
 fun insterFacutra() {
     objetoFactura.crearFactura()
     connection = establecerConexion()
 
     val stmt = connection.prepareStatement("INSERT INTO Facturas (ID, cifEmpresa, FechaFactura, ProductoVendido, PrecioProducto, CantidadVendida, PrecioTotal) VALUES (Facturas_ID_Seq.NEXTVAL, ?, ?, ?, ?, ?, ?)")
     stmt.setString(1, objetoFactura.cifEmpresa)
-    stmt.setString(2, objetoFactura.FechaFactura)
-    stmt.setString(3, objetoFactura.ProductoVendido)
-    stmt.setDouble(4, objetoFactura.PrecioProducto)
-    stmt.setInt(5, objetoFactura.CantidadVendida)
-    stmt.setDouble(6, objetoFactura.PrecioTotal)
+    stmt.setString(2, objetoFactura.fechaFactura)
+    stmt.setString(3, objetoFactura.productoVendido)
+    stmt.setDouble(4, objetoFactura.precioProducto)
+    stmt.setInt(5, objetoFactura.cantidadVendida)
+    stmt.setDouble(6, objetoFactura.precioTotal)
     stmt.executeUpdate()
+    stmt.close()
 }
-
 
 fun insertarEmpresa(){
     objetoEmpresa.crearFacturacion()
@@ -134,5 +97,37 @@ fun insertarEmpresa(){
     stmt.setString(2, objetoEmpresa.nombreEmpresa)
     stmt.setString(3, objetoEmpresa.dueno)
     stmt.executeUpdate()
+    stmt.close()
 }
 
+fun modificarDatosEmpresa(){
+    val cifDeEmpresa = vista.almacenarCifAModificar()
+    val nuevosDatos = vista.almacenarDatosEmpresaModificar()
+
+    connection = establecerConexion()
+
+    val query = "UPDATE EMPRESAS SET nombreEmpresa = ?, dueno = ? WHERE cifEmpresa = ?"
+    val stmt = connection.prepareStatement(query)
+
+    stmt.setString(1, nuevosDatos.nuevoNombreEmpresa)
+    stmt.setString(2, nuevosDatos.nuevoDueno)
+    stmt.setString(3, cifDeEmpresa)
+
+    stmt.executeUpdate()
+    stmt.close()
+
+    println("Los datos de la empresa con CIF $cifDeEmpresa han sido actualizados.")
+}
+
+fun modificarDatosFacturas(){
+
+
+}
+
+fun eliminarDeEmpresa(){
+
+}
+
+fun eliminarDeFactura(){
+
+}

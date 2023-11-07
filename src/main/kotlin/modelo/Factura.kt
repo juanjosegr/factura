@@ -1,27 +1,18 @@
 package modelo
 
-/*
-data class dtFactura(var ID:Int,
-                   var cifEmpresa:String,
-                   var FechaFactura:String,
-                   var ProductoVendido:String,
-                   var PrecioProducto:Double,
-                   var CantidadVendida:Int,
-                   var PrecioTotal:Double )*/
-
 class Factura {
 
     companion object {
         private var contId = 1
     }
 
-    var ID = contId++
+    var id = contId++
     var cifEmpresa:String = ""
-    var FechaFactura:String = ""
-    var ProductoVendido:String = ""
-    var PrecioProducto:Double = 0.0
-    var CantidadVendida:Int = 0
-    var PrecioTotal:Double = (PrecioProducto * CantidadVendida)
+    var fechaFactura:String = ""
+    var productoVendido:String = ""
+    var precioProducto:Double = 0.0
+    var cantidadVendida:Int = 0
+    var precioTotal:Double = (precioProducto * cantidadVendida)
 
 
     fun crearFactura(){
@@ -36,18 +27,18 @@ class Factura {
         this.cifEmpresa = readln()
 
         println("Dime la fecha de la factura.")
-        this.FechaFactura= readln()
+        this.fechaFactura= readln()
 
         println("Dime el producto vendido.")
-        this.ProductoVendido= readln()
+        this.productoVendido= readln()
 
         println("Dime el precio del producto")
-        this.PrecioProducto= readln().toDouble()
+        this.precioProducto= readln().toDouble()
 
         println("Dime la cantidad vendida.")
-        this.CantidadVendida = readln().toInt()
+        this.cantidadVendida = readln().toInt()
 
-        this.PrecioTotal = (PrecioProducto * CantidadVendida)
+        this.precioTotal = (precioProducto * cantidadVendida)
 
     }
 
