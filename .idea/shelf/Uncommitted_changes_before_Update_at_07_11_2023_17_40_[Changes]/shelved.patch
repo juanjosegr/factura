@@ -1,0 +1,44 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AnalysisUIOptions\">\r\n    <option name=\"ANALYZE_INJECTED_CODE\" value=\"false\" />\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dfccf68a-5d8e-456c-a942-ebd83ae86dcb\" name=\"Changes\" comment=\"xD\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/Main.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/Main.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/modelo/Empresa.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/modelo/Empresa.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/modelo/Factura.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/modelo/Factura.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/modelo/baseDatos.sql\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/modelo/baseDatos.sql\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/vista/menu.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/vista/Menu.kt\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Kotlin File\" />\r\n        <option value=\"Kotlin Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/kotlin/Main.kt\" root0=\"SKIP_INSPECTION\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2XXLvLsC5wiYFvy3G51qLH6DjeZ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/juanj/IdeaProjects/accesoJDBC\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.15625\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"run.code.analysis.last.selected.profile\": \"pProject Default\",\r\n    \"settings.editor.selected.configurable\": \"reference.projectsettings.compiler.javacompiler\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\juanj\\IdeaProjects\\Factura\\src\\main\\kotlin\\modelo\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dfccf68a-5d8e-456c-a942-ebd83ae86dcb\" name=\"Changes\" comment=\"\" />\r\n      <created>1698770708250</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1698770708250</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"xD\">\r\n      <created>1699043276603</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699043276603</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"xD\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"xD\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision cd1664c4c9d8a72518078843031914744f01a45c)
++++ b/.idea/workspace.xml	(date 1699296277772)
+@@ -7,16 +7,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="dfccf68a-5d8e-456c-a942-ebd83ae86dcb" name="Changes" comment="xD">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Controlador/Controlador.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Empresa.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Factura.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Factura.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/baseDatos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/baseDatos.sql" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/vista/menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/vista/Menu.kt" afterDir="false" />
+-    </list>
++    <list default="true" id="dfccf68a-5d8e-456c-a942-ebd83ae86dcb" name="Changes" comment="xD" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -82,7 +73,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1699043276603</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="xD">
++      <created>1699296193750</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1699296193750</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
