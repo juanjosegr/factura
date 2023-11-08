@@ -85,7 +85,7 @@ class Controlador {
 
             else -> {
                 // Si el usuario selecciona una opción no válida, se muestra un mensaje de "Consulta no disponible".
-                vista.ConsultaNoDisponible()
+                vista.consultaNoDisponible()
                 seguirCambiaoSalir()
             }
         }
@@ -104,13 +104,13 @@ class Controlador {
 
             2 -> {
                 // Si el usuario selecciona 2, se llama a la función para insertar una factura.
-                insterFacutra()
+                insterFactura()
                 seguirCambiaoSalir()
             }
 
             else -> {
                 // Si el usuario selecciona una opción no válida, se muestra un mensaje de "Consulta no disponible."
-                vista.ConsultaNoDisponible()
+                vista.consultaNoDisponible()
                 seguirCambiaoSalir()
             }
         }
@@ -135,7 +135,7 @@ class Controlador {
 
             else -> {
                 // Si el usuario selecciona una opción no válida, se muestra un mensaje de "Consulta no disponible."
-                vista.ConsultaNoDisponible()
+                vista.consultaNoDisponible()
                 seguirCambiaoSalir()
             }
         }
@@ -160,7 +160,7 @@ class Controlador {
 
             else -> {
                 // Si el usuario selecciona una opción no válida, se muestra un mensaje de "Consulta no disponible."
-                vista.ConsultaNoDisponible()
+                vista.consultaNoDisponible()
                 seguirCambiaoSalir()
             }
         }

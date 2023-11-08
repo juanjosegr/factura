@@ -1,6 +1,7 @@
 package vista
 
 import modelo.*
+import java.sql.SQLException
 
 /**
  * Clase Vista que gestiona la parte visual del menú y las interacciones del usuario.
@@ -14,6 +15,7 @@ class Vista {
      * @property nuevoDueno El nuevo dueño de la empresa.
      */
     data class DatosEmpresaModificada(val nuevoNombreEmpresa: String, val nuevoDueno: String)
+    class ExcepcionPersonalizada(message: String) : Exception(message)
 
     /**
      * Función que muestra un menú de opciones y permite al usuario seleccionar una de ellas.
@@ -58,7 +60,7 @@ class Vista {
     /**
      * Función que muestra un mensaje indicando que la consulta no está disponible.
      */
-    fun ConsultaNoDisponible() {
+    fun consultaNoDisponible() {
         println("Consulta no disponible.")
     }
 
@@ -93,39 +95,53 @@ class Vista {
      * @param nombreTabla El nombre de la tabla a consultar.
      */
     fun imprimirDatosConsulta(nombreTabla: String) {
-        // Se obtienen los datos de la tabla utilizando la función hacerConsulta.
-        val datos = hacerConsulta(nombreTabla)
+        try {
+            // Se obtienen los datos de la tabla utilizando la función hacerConsulta.
+            val datos = hacerConsulta(nombreTabla)
 
-        if (datos.isEmpty()) {
-            // Si no se encuentran datos, se muestra un mensaje indicando que no se encontraron datos.
-            println("No se encontraron datos para la tabla '$nombreTabla'.\n")
-        } else {
-            // Si se encuentran datos, se imprime el encabezado y los datos de la tabla.
-            println("Datos de la tabla '$nombreTabla':")
-            println(
-                """
+            if (datos.isEmpty()) {
+                // Si no se encuentran datos, se muestra un mensaje indicando que no se encontraron datos.
+                println("No se encontraron datos para la tabla '$nombreTabla'.\n")
+            } else {
+                // Si se encuentran datos, se imprime el encabezado y los datos de la tabla.
+                println("Datos de la tabla '$nombreTabla':")
+                println(
+                    """
             ---------------
         """.trimIndent()
-            )
-            println()
-            for (fila in datos) {
-                for ((columna, valor) in fila) {
-                    println("$columna: $valor")
-                }
+                )
                 println()
+                for (fila in datos) {
+                    for ((columna, valor) in fila) {
+                        println("$columna: $valor")
+                    }
+                    println()
+                }
             }
-        }
+        } catch (e: ExcepcionPersonalizada) {
+        // Aquí manejas una excepción personalizada si la función hacerConsulta lanza una excepción específica.
+        println("Error al consultar la tabla '$nombreTabla': ${e.message}")
+    } catch (e: Exception) {
+        // Aquí manejas excepciones genéricas o desconocidas.
+        println("Error inesperado: ${e.message}")
+    }
     }
 
     /**
      * Función que imprime los CIF de las empresas obtenidos a partir de la base de datos.
      */
     private fun imprimirCifDeEmpresas() {
-        // Se obtienen los CIF de las empresas utilizando la función obtenerCIFEmpresas.
-        val cifEmpresas = obtenerCIFEmpresas()
-        // Se imprime cada CIF de las empresas.
-        for (cif in cifEmpresas) {
-            println(cif)
+        try {
+            // Se obtienen los CIF de las empresas utilizando la función obtenerCIFEmpresas.
+            val cifEmpresas = obtenerCIFEmpresas()
+            // Se imprime cada CIF de las empresas.
+            for (cif in cifEmpresas) {
+                println(cif)
+            }
+        }catch (e: SQLException) {
+            println("Error al obtener CIF de empresas: ${e.message}")
+        } catch (e: Exception) {
+            println("Error inesperado: ${e.message}")
         }
     }
 
@@ -160,12 +176,20 @@ class Vista {
      * @return El ID de la factura a modificar ingresado por el usuario.
      */
     fun modificarIdFactura(): Int {
-        val idProducto = obtenerIdFacturas()
-        for (id in idProducto) {
-            println(id)
+        return try {
+            val idProducto = obtenerIdFacturas()
+            for (id in idProducto) {
+                println(id)
+            }
+            println("Dime el id a modificar.\n")
+            readln().toInt()
+        }catch (e: SQLException) {
+            println("Error al obtener IDs de facturas: ${e.message}")
+            -1 // Devuelve un valor por defecto
+        } catch (e: NumberFormatException) {
+            println("Error: Ingresa un número válido.")
+            -1 // Devuelve un valor que indique un error
         }
-        println("Dime el id a modificar.\n")
-        return readln().toInt()
     }
 
     /**
